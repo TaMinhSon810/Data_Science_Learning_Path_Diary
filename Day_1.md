@@ -1,6 +1,7 @@
 # DAY 1 - 15/01/2024
 ### Việc làm hôm nay:
 **1. Predict data timeseries thông qua mô hình ARIMA**
+
 ARIMA - Autoregressive Intergrated Moving Average
 https://phamdinhkhanh.github.io/2019/12/12/ARIMAmodel.html
 
@@ -8,6 +9,7 @@ https://phamdinhkhanh.github.io/2019/12/12/ARIMAmodel.html
 - p (AR Order) is the number of autoregressive terms 
 - d (Order of Differencing) is the number of nonseasonal differences
 - q (MA Order) is the number of lagged forecast errors in the prediction equation 
+
 **Cách xác định**
 *d*: 
 Check stationary thông qua dùng adfuller
