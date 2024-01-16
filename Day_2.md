@@ -17,14 +17,14 @@ Preprocessing fillna bằng KNNImputer (Đã kiểm tra hiệu quả nhất so v
   
 -> Mình đi theo hướng 2. Input sẽ có cột ngày, giá xe, các xe và mình sẽ predict toàn bộ xe cùng lúc
 
--> Hiện tại mình đang tìm hiểu LightGBM (team cũng tìm hiểu song song LightGBM)
+-> Hiện tại mình đang tìm hiểu **LightGBM** (team cũng tìm hiểu song song **VAR model**)
 
 Mình đang follow theo 2 source: 
 - https://forecastegy.com/posts/multivariate-time-series-forecasting-in-python/
 - https://github.com/ugursaricam/store-item-demand-forecasting/blob/master/deman_forecasting.py
 - https://www.kaggle.com/code/yugagrawal95/multivariate-timeseries-analysis-by-lgbm
 
-***Source 1***, predict data dùng ML forecast
+***Source 1***, predict data dùng **MLForecast**
 ```
 models = [LGBMRegressor(random_state=0, n_estimators=100, force_col_wise=True)]
 
@@ -51,3 +51,7 @@ p = model.predict(365)
 -> Đang hiểu theo hướng là cần thử param = các số khác nhau. 
 Tuỳ trường hợp có thể có các cách ước lượng trước khác nhau, VD như lag_features sẽ giống việc tìm p qua pacf. 
 Tuy nhiên, thực tế cần thử các số khác nhau quanh số ước lượng để tìm kiếm kểt quả tốt nhất
+
+Một phần thêm thấy khá hay tìm hiểu được có hướng dẫn kết hợp model để predict: 
+Kết hợp giữa **Prophet** và **LightGBM**:
+https://medium.com/@tubelwj/time-series-forecasting-with-lightgbm-and-prophet-62caca1a926d
