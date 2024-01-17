@@ -25,11 +25,11 @@ Mình cũng xem thử từng xe so sánh **Prophet** và **LightGBM** thì thấ
 - Thực hiện tiếp **XGBoost** + **MLForecast** ra kết qủa kém hơn LightGBM một chút nhưng vẫn rất tốt.
 
 Note lại một chút phần **Tuning hyperparams**: 
-Có nhiều cách khác nhau để tuning như **Grid Search**, **Random Search**, **Bayesian Optimization** hay **Optuna**. Tuy vậy các phương pháp **Grid Search** hay **Random Search** khá cũ, cổ điển và chỉ hoạt động hiệu quả với số lượng tham số ít.
+Có nhiều cách khác nhau để tuning như **Grid Search**, **Random Search**, **Bayesian Optimization** hay **Optuna**. Tuy vậy các phương pháp **Grid Search** hay **Random Search** khá cũ, cổ điển và chỉ hoạt động hiệu quả với số lượng tham số ít.\
 -> Phần này cần mình sẽ xem thêm trong tương lai :D. Hiện tại mình dùng Optuna trong bài toán và thấy ổn với kết quả.
 
 Do kết quả đang tốt hơn kỳ vọng khá nhiều nên mình cũng đang cần check lại một số điểm:
-- Data predict mình plot ra đang là đường thẳng hoặc gần như đường thẳng (biên độ rất ít)
+- Data predict mình plot ra đang là đường thẳng hoặc gần như đường thẳng (biên độ rất ít)\
 -> Đang không hiểu rõ tại sao :D Do kết quả tốt nên mình k nghĩ plot như vây có thể làm RMSE bé thế trong tổng thể các xe.
 - Việc fillna KNNImputer liệu có gây ra lỗi predict không? Do việc fillna cho phù hợp input và làm dày data points nên số data points fillna là rất nhiều.
 
