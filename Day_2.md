@@ -1,6 +1,7 @@
 # DAY 2 - 16/01/2024
 ### Việc làm hôm nay:
 **1. Tìm hiểu các mô hình predict Multivariate Timeseries**
+
 Tập trung tìm hiêu các mô hình mà có thể predict Multivariate Timeseries do Prophet hay ẢRIMA sử dụng cho Univariate Timeseries
 
 ***Bài toán mình đang sử dụng dự đoán xe:***
