@@ -16,10 +16,10 @@ https://forecastegy.com/posts/multiple-time-series-forecasting-with-lightgbm-in-
 Cách làm:
 - Input như hôm qua có đề cập thay vì predict riêng từng xe thì sẽ predict toàn bộ xe cùng lúc (có thể hiêu như cột unique_id trong bài sample)
 - Đầu tiên để có thể có input phù hợp như bài sample. Mình đã fillna bằng **KNNImputer** cho từng hãng hiệu xe sẽ có giá xe theo từng ngày từ 2019->2022
-- Tiếp theo mình copycat theo code mẫu chỉ thay tên các cột cho phù hợp. Kết quả hiệu quả bất ngờ (R-squared ~0.7, RMSE chỉ ~150 triệu) tốt hơn nhiều so với **Prophet** (R-squared < 0, RMSE chỉ ~3 tỷ)
+- Tiếp theo mình copycat theo code mẫu chỉ thay tên các cột cho phù hợp. Kết quả hiệu quả bất ngờ (R-squared ~0.7, RMSE chỉ ~150 triệu) tốt hơn nhiều so với **Prophet** (R-squared < 0, RMSE chỉ ~3 tỷ)\
 Mình cũng xem thử từng xe so sánh **Prophet** và **LightGBM** thì thấy các xe **Prophet** dự đoán lệch nhiều (RMSE lớn) thì **LightGBM** dự đoán đúng hơn nhiều.
 
-- Mình có xem tiếp bài viết thấy có hướng dãn Tuning các params bằng library **optuna** khá hay. Mình chạy n_trials = 20 và đổi các params sau khi chạy hàm -> Kết quả tốt hơn một chút
+- Mình có xem tiếp bài viết thấy có hướng dãn Tuning các params bằng library **optuna** khá hay. Mình chạy n_trials = 20 và đổi các params sau khi chạy hàm -> Kết quả tốt hơn một chút\
 
 ![Alt text](image.png)
 - Thực hiện tiếp **XGBoost** + **MLForecast** ra kết qủa kém hơn LightGBM một chút nhưng vẫn rất tốt.
