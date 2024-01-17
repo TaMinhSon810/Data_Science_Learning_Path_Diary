@@ -20,6 +20,7 @@ Cách làm:
 Mình cũng xem thử từng xe so sánh **Prophet** và **LightGBM** thì thấy các xe **Prophet** dự đoán lệch nhiều (RMSE lớn) thì **LightGBM** dự đoán đúng hơn nhiều.
 
 - Mình có xem tiếp bài viết thấy có hướng dãn Tuning các params bằng library **optuna** khá hay. Mình chạy n_trials = 20 và đổi các params sau khi chạy hàm -> Kết quả tốt hơn một chút
+
 ![Alt text](image.png)
 - Thực hiện tiếp **XGBoost** + **MLForecast** ra kết qủa kém hơn LightGBM một chút nhưng vẫn rất tốt.
 
