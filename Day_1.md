@@ -22,7 +22,9 @@ print('p-value:', result[1])
 ```
 Result: Nếu có p-value < 0.05 -> có tính stationary. 
         Ngược lại không phủ nhận được giả thuyết timeseries không có tính stationary. 
+
 -> Check stationary ta sẽ xác định có cần phải differencing không
+
 -> Xác định ddược d
 
 *p*: Xác định thông qua PACF
