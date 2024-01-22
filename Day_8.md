@@ -9,9 +9,11 @@ extracted_features = extract_features(timeseries, column_id = "name_car", column
 ```
 
 Mình dùng vòng lặp for để tạo features cho các loại xe. Kết quả là out of memory :)) \
-MÌnh check error thì biết **tsfresh** nếu set `default_fc_parameters=ComprehensiveFCParameters()` thì sẽ tạo hơn 1000 features khác nhau. Chính vì vậy, solution set `default_fc_parameters=MinimalFCParameters()` sẽ chỉ tạo hơn 10 features nên tránh bị out of memory
+MÌnh check error thì biết **tsfresh** nếu set `default_fc_parameters=ComprehensiveFCParameters()` thì sẽ tạo hơn 1000 features khác nhau. \
+Chính vì vậy, solution set `default_fc_parameters=MinimalFCParameters()` sẽ chỉ tạo hơn 10 features nên tránh bị out of memory
 
-Tips: Có thể set **default_fc_parameters** theo 1 dictionary. Link settings của feature extractions
+Tips: Có thể set **default_fc_parameters** theo 1 dictionary. Link settings của feature extractions:
+
 tsfresh.readthedocs.io/en/latest/text/feature_extraction_settings.html
 
 
