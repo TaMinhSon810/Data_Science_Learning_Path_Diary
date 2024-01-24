@@ -32,9 +32,9 @@ Một ví dụ nữa là so sánh lương trung bình nhân viên nam và nữ c
 ***Cách tính:***
 - **Two Sample T-Tests** tính thông qua t-statistic với công thức:
 ![Alt text](image-3.png) 
-- Từ kết quả t -> check p-value
-  - p-value < significance level (thường 0.05) -> Bác bỏ Ho. Tức có sự chênh lệch giữa trung bình 2 mẫu
-  - p-value >= significance level (thường 0.05) -> Không thể bác bỏ Ho. 
+- Từ kết quả t -> check `p-value`
+  - `p-value` < significance level (thường 0.05) -> Bác bỏ Ho. Tức có sự chênh lệch giữa trung bình 2 mẫu
+  - `p-value` >= significance level (thường 0.05) -> Không thể bác bỏ Ho. 
 
 ***Link***: https://www.jmp.com/en_is/statistics-knowledge-portal/t-test/two-sample-t-test.html
 
@@ -44,5 +44,5 @@ from scipy.stats import ttest_ind
 tstat, pval = ttest_ind(times_version1, times_version2)
 ```
 
-Bài cũng hướng dẫn việc sử dụng khi số mẫu > 2 (non-binary):\
+Bài cũng hướng dẫn việc sử dụng **Two Sample T-Tests** khi số mẫu > 2 (non-binary):\
 Ta sẽ so sánh từng cặp một. VD với 3 tập mãu A, B, C ta so sánh A với B, B với C, C với A
