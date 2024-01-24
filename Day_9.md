@@ -1,4 +1,4 @@
-# DAY 8 - 22/01/2024
+# DAY 9 - 23/01/2024
 ### Việc làm hôm nay:
 
 Hôm nay chỉ check test code LightGBM và search giá niêm yết các xe...

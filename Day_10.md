@@ -5,7 +5,8 @@ Hôm nay brainstorm các thứ các thứ liên quan việc chuẩn hoá input �
 
 Trong lúc ngồi phân tích chuẩn hoá input, mình vỡ ra việc tập train có các features như nào thì tron tập test cũng phải có các features như vậy thì nó mới có thể predict được...
 
-###Học thêm
+### Học thêm
+
 Hôm nay học bài Statistics Fundamentals Part II trên codecademy.com. Phần HYPOTHESIS TESTING - ASSOCIATIONS:
 - **Hypothesis Testing** là quá trình đánh giá sự hợp lệ của một giả định bằng cách đánh giá dữ liệu mẫu từ đó đưa ra kết luận cho toàn bộ tập dữ liệu.\
 https://knowledge.sapp.edu.vn/knowledge/t%C3%B3m-t%E1%BA%AFt-c%C3%A1c-ki%E1%BA%BFn-th%E1%BB%A9c-quan-tr%E1%BB%8Dng-c%E1%BB%A7a-reading-11-hypothesis-testing
